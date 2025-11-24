@@ -1,0 +1,35 @@
+# Environnements virtuels
+.venv/
+venv/
+env/
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Modèles lourds
+*.joblib
+
+# Garde uniquement le modèle de prod
+!models/
+!models/*.joblib
+
+# Données locales
+data/
+Data/
+
+# Notebooks
+*.ipynb
+*.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,37 @@
+EXPLORATORY DATA ANALYSIS REPORT
+Dataset: Reddit Sentiment Analysis
+Date: 2025-11-24 19:38:37
+
+GENERAL STATISTICS
+--------------------------------------------------
+Total samples: 36,896
+Missing values: 0
+Duplicates: 448
+Columns: text, label, length, word_count
+
+LABEL DISTRIBUTION
+--------------------------------------------------
+Negative (-1): 8,277 (22.43%)
+Neutral (0):   12,790 (34.67%)
+Positive (1):  15,829 (42.90%)
+
+TEXT ANALYSIS
+--------------------------------------------------
+Character length:
+  Min: 3
+  Max: 8656
+  Mean: 179.99
+  Median: 79.00
+  Std: 356.15
+
+Word count:
+  Min: 1
+  Max: 1306
+  Mean: 29.37
+  Median: 13.00
+
+OBSERVATIONS AND RECOMMENDATIONS
+--------------------------------------------------
+- No missing values detected
+- 448 duplicates found
+- Dataset is balanced (ratio 1.91x)

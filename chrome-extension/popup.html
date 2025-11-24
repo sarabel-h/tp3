@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sentiment Analyzer</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app" id="app">
+    <header>
+      <h1>Sentiment Analyzer</h1>
+      <label class="switch">
+        <input type="checkbox" id="darkToggle" />
+        <span class="slider"></span>
+      </label>
+    </header>
+
+    <div class="controls">
+      <button id="analyzeBtn">Analyser les commentaires visibles</button>
+      <button id="copyBtn" disabled>Copier résultats</button>
+    </div>
+
+    <div id="status" class="status hidden"></div>
+
+    <section class="stats hidden" id="statsSection">
+      <div class="stat-card pos">
+        <div class="stat-title">Positif</div>
+        <div class="stat-value" id="posPct">0%</div>
+      </div>
+      <div class="stat-card neu">
+        <div class="stat-title">Neutre</div>
+        <div class="stat-value" id="neuPct">0%</div>
+      </div>
+      <div class="stat-card neg">
+        <div class="stat-title">Négatif</div>
+        <div class="stat-value" id="negPct">0%</div>
+      </div>
+    </section>
+
+    <section class="filters hidden" id="filtersSection">
+      <button class="filter active" data-filter="all">Tous</button>
+      <button class="filter" data-filter="1">Positifs</button>
+      <button class="filter" data-filter="0">Neutres</button>
+      <button class="filter" data-filter="-1">Négatifs</button>
+    </section>
+
+    <section class="list hidden" id="listSection">
+      <ul id="resultsList"></ul>
+    </section>
+
+    <footer>
+      <small>Batch API FastAPI /predict_batch</small>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
