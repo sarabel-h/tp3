@@ -111,8 +111,4 @@ http://localhost:7860/docs
 2. Activer le mode développeur  
 3. Charger le dossier `chrome-extension/`
 
-## 8. Auteur
 
-Sara Belhouari  
-Filière INDIA — 2025/2026  
-ENSAM Rabat
